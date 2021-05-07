@@ -1,15 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
 /* base styles */
 :root {
-  --primary: #166ae8;
+  --accent: #166ae8;
+  --bg-primary: #e6e4da;
+  --clr-font-primary: #444;
 }
+
 body {
   padding: 0;
-  margin: 0 20px;
-  font-family: 'Quicksand', sans-serif;
-  color: #444;
-  background: #f2f2f2;
+  margin: 0 2rem;
+  font-family: "Quicksand", sans-serif;
+  color: var(--clr-font-primary);
+  background: var(--bg-primary);
 }
 a {
   color: inherit;
@@ -40,18 +43,52 @@ nav li {
 }
 nav li.btn {
   padding: 10px 16px;
-  border: 2px solid var(--primary);
+  border: 2px solid var(--accent);
   border-radius: 30px;
   font-weight: 600;
-  color: var(--primary);
+  color: var(--accent);
   cursor: pointer;
 }
 nav li.btn:hover {
   color: white;
-  background: var(--primary);
+  background: var(--accent);
 }
 
 /* banner */
+.banner {
+  margin: 0 auto;
+  max-width: 960px;
+}
 .banner img {
   border-radius: 6px;
+}
+
+/* guides */
+.guides {
+  max-width: 960px;
+  margin: 40px auto;
+  letter-spacing: 1px;
+  line-height: 1.6em;
+}
+
+.guides > h2 {
+  text-align: center;
+  margin: 1.5rem auto 2em;
+}
+
+/* error */
+.error {
+  background: #000;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* cards */
+.card {
+  padding: 1rem;
+  box-shadow: #00000026 0px 2px 2px 1px;
+}
+.card + .card {
+  margin-top: 1rem;
 }
