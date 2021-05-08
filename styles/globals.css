@@ -48,10 +48,18 @@ nav li.btn {
   font-weight: 600;
   color: var(--accent);
   cursor: pointer;
+  transition: all 150ms ease-out;
 }
 nav li.btn:hover {
   color: white;
   background: var(--accent);
+}
+
+footer {
+  padding: 2rem;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.1rem;
 }
 
 /* banner */
@@ -64,6 +72,10 @@ nav li.btn:hover {
 }
 
 /* photos */
+.gallery-photo {
+  object-fit: cover;
+}
+
 .photos {
   max-width: 960px;
   margin: 40px auto;
@@ -89,12 +101,18 @@ nav li.btn:hover {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 /* cards */
 .card {
   padding: 1rem;
-  box-shadow: #00000026 0px 2px 2px 1px;
-  flex: 1 1 250px;
+  box-shadow: #00000026 0px 2px 5px 1px;
+  max-width: 400px;
+}
+
+.card > p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }

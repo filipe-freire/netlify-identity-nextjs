@@ -47,12 +47,20 @@ export default function Photos() {
       <section className="gallery">
         {photos &&
           photos.map(photo => (
-            <div key={photo.title} className="card">
-              <Image src={photo.src} alt="bird" width={200} height={200} />
-              <h3>{photo.description}</h3>
-              <h4>Taken by: {photo.author}</h4>
-              <p>{photo.date}</p>
-            </div>
+            <a href={`${photo.link}`} target="_blank" rel="noreferrer noopener">
+              <div key={photo.title} className="card">
+                <Image
+                  className="gallery-photo"
+                  src={photo.src}
+                  alt="bird"
+                  width={500}
+                  height={400}
+                />
+                <p>Description: {photo.description || "No description provided"}</p>
+                <h3>Taken by: {photo.author}</h3>
+                <p>Date: {photo.date}</p>
+              </div>
+            </a>
           ))}
       </section>
     </div>
