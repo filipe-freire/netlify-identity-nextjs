@@ -18,8 +18,8 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link href="/photos">
-              <a>Photos</a>
+            <Link href="/gallery">
+              <a>Gallery</a>
             </Link>
           </li>
           {(authReady && !user && (

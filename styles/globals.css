@@ -83,9 +83,9 @@ footer {
   line-height: 1.6em;
 }
 
-.photos > h2 {
+.photos > h1 {
   text-align: center;
-  margin: 1.5rem auto 2em;
+  margin: 1.5rem auto 1.5em;
 }
 
 /* error */

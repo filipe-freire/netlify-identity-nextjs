@@ -36,7 +36,7 @@ export default function Photos() {
 
   return (
     <div className="photos">
-      <h2>All Photos</h2>
+      <h1>Gallery</h1>
 
       {!authReady && <p>Loading...</p>}
       {error && (
