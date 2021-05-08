@@ -63,15 +63,15 @@ nav li.btn:hover {
   border-radius: 6px;
 }
 
-/* guides */
-.guides {
+/* photos */
+.photos {
   max-width: 960px;
   margin: 40px auto;
   letter-spacing: 1px;
   line-height: 1.6em;
 }
 
-.guides > h2 {
+.photos > h2 {
   text-align: center;
   margin: 1.5rem auto 2em;
 }
@@ -84,11 +84,17 @@ nav li.btn:hover {
   padding: 1rem;
 }
 
+/* gallery */
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
 /* cards */
 .card {
   padding: 1rem;
   box-shadow: #00000026 0px 2px 2px 1px;
-}
-.card + .card {
-  margin-top: 1rem;
+  flex: 1 1 250px;
 }
