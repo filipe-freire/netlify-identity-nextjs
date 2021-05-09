@@ -23,25 +23,15 @@ a {
   margin: 0 auto;
 }
 
-/* navbar */
-nav {
-  margin: 20px auto 40px;
-  display: flex;
-  align-items: center;
+footer {
+  padding: 2rem auto;
+  text-align: center;
+  font-weight: 300;
 }
-nav h1 {
-  margin-left: 10px;
-}
-nav ul {
-  margin-left: auto;
-  list-style-type: none;
-  padding: 0;
-}
-nav li {
-  display: inline-block;
-  margin-left: 16px;
-}
-nav li.btn {
+
+/* Utilities */
+
+.btn {
   padding: 10px 16px;
   border: 2px solid var(--accent);
   border-radius: 30px;
@@ -50,16 +40,76 @@ nav li.btn {
   cursor: pointer;
   transition: all 150ms ease-out;
 }
-nav li.btn:hover {
+.btn:hover,
+.btn:focus {
   color: white;
   background: var(--accent);
 }
 
-footer {
-  padding: 2rem;
+.gallery-link {
+  margin: 1rem auto;
+  display: block;
   text-align: center;
-  font-weight: 300;
   font-size: 1.1rem;
+  max-width: 250px;
+}
+
+/* Home Styles */
+.home {
+  max-width: 760px;
+  margin: 40px auto;
+  letter-spacing: 1px;
+  line-height: 1.6em;
+}
+
+.home > section > .paragraph {
+  text-align: justify;
+}
+
+/* navbar */
+.nav-mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.1rem auto;
+}
+.nav-mobile > .nav-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-mobile > .nav-title > h1 {
+  margin-left: 1rem;
+}
+
+.nav-mobile ul {
+  margin-left: auto;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-mobile li {
+  display: inline-block;
+  margin-left: 16px;
+}
+.nav-mobile li.btn {
+  padding: 10px 16px;
+  border: 2px solid var(--accent);
+  border-radius: 30px;
+  font-weight: 600;
+  color: var(--accent);
+  cursor: pointer;
+  transition: all 150ms ease-out;
+}
+.nav-mobile li.btn:hover {
+  color: white;
+  background: var(--accent);
+}
+
+.nav-dekstop {
+  display: none;
 }
 
 /* banner */
@@ -115,4 +165,39 @@ footer {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+}
+
+.warning {
+  background-color: rgba(255, 245, 100, 0.3);
+  border-left-color: #f8e325;
+  border-left-width: 9px;
+  border-left-style: solid;
+  padding: 20px 45px 20px 26px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 600px) {
+  /* navbar */
+  .nav-mobile {
+    display: none;
+  }
+  .nav-dekstop {
+    display: block;
+    margin: 20px auto 40px;
+    display: flex;
+    align-items: center;
+  }
+  .nav-dekstop h1 {
+    margin-left: 10px;
+  }
+  .nav-dekstop ul {
+    margin-left: auto;
+    list-style-type: none;
+    padding: 0;
+  }
+  .nav-dekstop li {
+    display: inline-block;
+    margin-left: 16px;
+  }
 }

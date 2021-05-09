@@ -8,7 +8,33 @@ export default function Navbar() {
 
   return (
     <div className="container">
-      <nav>
+      {/* Mobile Version */}
+      <nav className="nav-mobile" role="navigation">
+        <Link href="/">
+          <a className="nav-title">
+            <Image src="/polaroid-frame.png" width={50} height={48} />
+            <h1>Photo Gallery</h1>
+          </a>
+        </Link>
+
+        <ul>
+          {(authReady && !user && (
+            <li onClick={login} className="btn">
+              Login/Signup
+            </li>
+          )) || (
+            <>
+              <li>{user?.email}</li>
+              <li onClick={logout} className="btn">
+                Logout
+              </li>
+            </>
+          )}
+        </ul>
+      </nav>
+
+      {/* Desktop Version */}
+      <nav className="nav-dekstop" role="navigation">
         <Image src="/polaroid-frame.png" width={50} height={48} />
         <h1>Photo Gallery</h1>
         <ul>
@@ -17,6 +43,7 @@ export default function Navbar() {
               <a>Home</a>
             </Link>
           </li>
+
           <li>
             <Link href="/gallery">
               <a>Gallery</a>
