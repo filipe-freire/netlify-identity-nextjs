@@ -1,6 +1,5 @@
 import { useContext, useEffect, useState } from "react";
 import AuthContext from "../stores/authContext";
-import Image from "next/image";
 
 export default function Photos() {
   const { user, authReady } = useContext(AuthContext);
@@ -49,7 +48,7 @@ export default function Photos() {
           photos.map(photo => (
             <a href={`${photo.link}`} target="_blank" rel="noreferrer noopener">
               <div key={photo.title} className="card">
-                <Image
+                <img
                   className="gallery-photo"
                   src={photo.src}
                   alt="bird"
