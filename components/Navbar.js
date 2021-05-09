@@ -23,12 +23,9 @@ export default function Navbar() {
               Login/Signup
             </li>
           )) || (
-            <>
-              <li>{user?.email}</li>
-              <li onClick={logout} className="btn">
-                Logout
-              </li>
-            </>
+            <li onClick={logout} className="btn">
+              Logout
+            </li>
           )}
         </ul>
       </nav>
@@ -55,7 +52,7 @@ export default function Navbar() {
             </li>
           )) || (
             <>
-              <li>{user?.email}</li>
+              <li>Welcome {user?.user_metadata?.full_name}!</li>
               <li onClick={logout} className="btn">
                 Logout
               </li>
@@ -63,6 +60,7 @@ export default function Navbar() {
           )}
         </ul>
       </nav>
+      {user && <p className="mobile-welcome-user">Welcome {user?.user_metadata?.full_name}! 👋🏻</p>}
     </div>
   );
 }

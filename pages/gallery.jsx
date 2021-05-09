@@ -46,8 +46,8 @@ export default function Photos() {
       <section className="gallery">
         {photos &&
           photos.map(photo => (
-            <a href={`${photo.link}`} target="_blank" rel="noreferrer noopener">
-              <div key={photo.title} className="card">
+            <a key={photo.src} href={`${photo.link}`} target="_blank" rel="noreferrer noopener">
+              <div className="card">
                 <img
                   className="gallery-photo"
                   src={photo.src}
