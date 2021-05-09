@@ -10,7 +10,7 @@ export default function Home() {
           solution!
         </p>
         <Link href="/gallery">
-          <a className="btn gallery-link">➡ Enter the Gallery ⬅</a>
+          <a className="btn gallery-link">Enter the Gallery</a>
         </Link>
         <p className="warning">In order to access the gallery you first need to sign up/sign in.</p>
       </section>

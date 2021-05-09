@@ -51,7 +51,15 @@ footer {
   display: block;
   text-align: center;
   font-size: 1.1rem;
-  max-width: 250px;
+  max-width: 220px;
+  color: #3d444e;
+  border-color: #3d444e;
+}
+
+.gallery-link:hover,
+.gallery-link:focus {
+  color: white;
+  background: #3d444e;
 }
 
 /* Home Styles */
