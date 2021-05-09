@@ -1,15 +1,13 @@
-This is the starter site project & all course files for the Next.js & Netlify Identity tutorial on the Net Ninja YouTube channel. Check out the [full tutorial here](https://www.youtube.com/playlist?list=PL4cUxeGkcC9i4g-0dAaMmFAyM6k3FmuZz).
+# Project Intro
 
-### Getting Started
-To install the starter project:
-```
-npx create-next-app [your_site_name] -e https://github.com/iamshaunjp/next-netlify-identity/tree/lesson-1-starter
-```
+[![Netlify Status](https://api.netlify.com/api/v1/badges/250b49da-80d5-4260-8b03-806184a1f547/deploy-status)](https://app.netlify.com/sites/identity-nextjs-integration-demo/deploys)
 
-### Other Lessons
-To view the code for a specific lesson, select that lesson from the branch dropdown (top-left).
+This project aims to demonstrate a possible implementation of Netlify Identity's auth solution. A mock Photo Gallery was built in NextJS to show the concept, where the user can only see the photos upon sign up.
+<br />
+<br />
 
-### Image Credit (for use in project)
-Rupee icon - [https://game-icons.net/1x1/delapouite/rupee.html](https://game-icons.net/1x1/delapouite/rupee.html)
+## Credits
 
-Mario background - [https://unsplash.com/photos/_R95VMWyn7A](https://unsplash.com/photos/_R95VMWyn7A)
+➡ Thank you [Shaun AKA The Net Ninja](https://github.com/iamshaunjp) for the very useful introduction on Netlify Identity's. Without you this project certainly wouldn't be here! 💙 <br />
+➡ All images were sourced from [Unsplash](https://unsplash.com/). Thank you to the awesome people that took the photos and made them publicly available, you're the real MVP! 📷 <br />
+➡ Last but not least, thank you to all the people that make NextJS such a pleasant framework to work with and actively improve it everyday. 👩🏻‍💻👨🏻‍💻
