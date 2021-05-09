@@ -1,8 +1,8 @@
-# Project Intro
+# Photo Gallery - Intro
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/250b49da-80d5-4260-8b03-806184a1f547/deploy-status)](https://app.netlify.com/sites/identity-nextjs-integration-demo/deploys)
 
-This project aims to demonstrate a possible implementation of Netlify Identity's auth solution. A mock Photo Gallery was built in NextJS to show the concept, where the user can only see the photos upon sign up.
+This project aims to demonstrate a possible implementation of Netlify Identity's auth solution. A mock Photo Gallery was built in NextJS to show the concept, where the user can only see the photos upon sign up. You can access the project by [clicking here!](https://identity-nextjs-integration-demo.netlify.app/)
 <br />
 <br />
 
