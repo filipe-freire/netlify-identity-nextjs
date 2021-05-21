@@ -5,6 +5,7 @@
   --accent: #166ae8;
   --bg-primary: #e6e4da;
   --bg-secondary: #333;
+  --bg-card: #fff;
   --clr-font-primary: #444;
   --clr-font-secondary: #f5f5f5;
 }
@@ -151,7 +152,7 @@ footer {
 }
 
 .photos {
-  max-width: 960px;
+  max-width: 1150px;
   margin: 40px auto;
   letter-spacing: 1px;
   line-height: 1.6em;
@@ -186,6 +187,8 @@ footer {
   padding: 1rem;
   box-shadow: #00000026 0px 2px 5px 1px;
   max-width: 400px;
+  border-radius: 6px;
+  background-color: var(--bg-card);
 }
 
 .card > p {

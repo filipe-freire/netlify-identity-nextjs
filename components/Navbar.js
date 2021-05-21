@@ -2,12 +2,18 @@ import Link from "next/link";
 import Image from "next/image";
 import AuthContext from "../stores/authContext";
 import { useContext } from "react";
+import { motion } from "framer-motion";
 
 export default function Navbar() {
   const { user, login, logout, authReady } = useContext(AuthContext);
 
   return (
-    <div className="container">
+    <motion.div
+      initial={{ y: -100 }}
+      animate={{ y: 0 }}
+      transition={{ delay: 0.1 }}
+      className="container"
+    >
       {/* Mobile Version */}
       <nav className="nav-mobile" role="navigation">
         <Link href="/">
@@ -60,7 +66,11 @@ export default function Navbar() {
           )}
         </ul>
       </nav>
-      {user && <p className="mobile-welcome-user">Welcome {user?.user_metadata?.full_name}! 👋🏻</p>}
-    </div>
+      {user && (
+        <p className="mobile-welcome-user">
+          Welcome {user?.user_metadata?.full_name}! 👋🏻
+        </p>
+      )}
+    </motion.div>
   );
 }
