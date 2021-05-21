@@ -63,7 +63,7 @@ export default function Photos() {
                 <img
                   className="gallery-photo"
                   src={photo.src}
-                  alt="bird"
+                  alt={photo.description}
                   width={500}
                   height={400}
                 />
