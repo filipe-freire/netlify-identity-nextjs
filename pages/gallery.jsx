@@ -48,9 +48,6 @@ export default function Photos() {
         {photos &&
           photos.map((photo) => (
             <motion.a
-              drag
-              dragConstraints={{ left: 0, bottom: 0, top: 0, right: 0 }}
-              dragElastic={0.5}
               whileHover={{
                 scale: 1.05,
               }}
